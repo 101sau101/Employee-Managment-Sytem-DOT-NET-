@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Edit Data";
+}
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-secondary border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <i class="fa-solid fa-users me-lg-4"></i>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" >Employee Management System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About US">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FetchData">FetchData</a>
+                        </li>
+            
+                    </ul>
+                   
+                   
+                </div>
+            </div>
+        </nav>
+    <!--Main Navigation-->
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="position-sticky m-0 p-0">
+      <div class="list-group list-group-flush mx-3 mt-4 w-25 p-4" style="float:left;background:url('https://img.freepik.com/free-vector/realistic-stars-galaxy-background_23-2148964715.jpg');height:100%">
+        <a
+         href="#"
+          class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-danger text-white d-inline"
+          aria-current="true"
+        >
+          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-info text-white d-inline">
+          <i class="fa-solid fa-house me-3"></i><span>Home</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-info text-white d-inline "
+          ><i class="fa-solid fa-database me-3"></i><span></span>Fetch data</a>
+
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-info text-white d-inline ">
+          <i class="fa-solid fa-question me-3"></i><span></span>About us</a>
+        
+      </div>
+      
+          </div>
+         </div>
+       <div class="border border-success" style="background:url('https://images.pexels.com/photos/140945/pexels-photo-140945.jpeg?cs=srgb&dl=pexels-ruslan-burlaka-140945.jpg&fm=jpg');height:100%;background-repeat:no-repeat;background-size:cover;" >
+ <h1 style="color:white;">Edit Employee Data</h1> 
+
+    
+     
+   <form>
+  <div class="form-group w-50 p-3 h-25 d-inline-block text-white">
+    <label for="name">NAME</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+  </div>
+  <div class="form-group w-25 p-3 h-25 d-inline-block text-white">
+    <label for="phone">PHONE</label>
+    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Phone">
+  </div>
+  <div class="form-group w-25 p-3 h-25 d-inline-block text-white">
+    <label for="address">ADDRESS</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
+  </div>
+    <div class="form-group w-25 p-3 h-25 d-inline-block text-white">
+  <label for="department">DEPARTMENT</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Department">
+    </div>
+    <div class="form-group w-25 p-3 h-25 d-inline-block text-white">
+  <label for="department">Gender</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gender">
+  </div>
+
+  <button type="submit" class="btn btn-success">Save</button>
+</form>
+
+ 
+</div>
+    
+     
+
+ 

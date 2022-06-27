@@ -1,0 +1,169 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+
+}
+
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-0 pb-0 tex-white">
+    <div class="container-fluid mb-0 pb-0">
+        <i class="fa-solid fa-users me-lg-4 mb-0 pb-0" style="color:white;"></i>
+        <a class="navbar-brand " asp-area="" asp-controller="Home" asp-action="Index">Employee Management System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Employee" asp-action="About">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Employee" asp-action="FetchData">FetchData</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Employee" asp-action="Read">Read</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </div>
+</nav>
+<!--Main Navigation-->
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="position-sticky m-0 p-0">
+        <div class="list-group list-group-flush mx-3 mt-4 w-25 p-4" style="float:left;background:url('https://img.freepik.com/free-vector/realistic-stars-galaxy-background_23-2148964715.jpg');height:100%">
+            <a href="#"
+               class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-danger text-white d-inline"
+               aria-current="true">
+                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-info text-white d-inline">
+                <i class="fa-solid fa-house me-3"></i><span>Home</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-info text-white d-inline "><i class="fa-solid fa-database me-3"></i><span></span>Fetch data</a>
+
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-info text-white d-inline ">
+                <i class="fa-solid fa-question me-3"></i><span></span>About us
+            </a>
+
+        </div>
+        <div>
+           <div class="bg-image mt-0 pt-0"
+     style="background-image: url('https://images.ctfassets.net/hrltx12pl8hq/1fR5Y7KaK9puRmCDaIof7j/09e2b2b9eaf42d450aba695056793607/vector1.jpg');
+            height: 100vh">
+                <h1 class="text-light">Employee Data</h1>
+
+                <p>
+                    <a href="#">Create New</a>
+                </p>
+                <table class='table table-hover w-50 p-3 text-light'>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Department</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+
+                        <tr>
+                            <td>EmployeeId</td>
+                            <td>Name</td>
+                            <td>Gender</td>
+                            <td>Department</td>
+                            <td>City</td>
+                            <td>
+                                <a href='#'>Edit</a>  |
+                                <a href='#'>Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EmployeeId</td>
+                            <td>Name</td>
+                            <td>Gender</td>
+                            <td>Department</td>
+                            <td>City</td>
+                            <td>
+                                <a href='#'>Edit</a>  |
+                                <a href='#'>Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EmployeeId</td>
+                            <td>Name</td>
+                            <td>Gender</td>
+                            <td>Department</td>
+                            <td>City</td>
+                            <td>
+                                <a href='#'>Edit</a>  |
+                                <a href='#'>Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EmployeeId</td>
+                            <td>Name</td>
+                            <td>Gender</td>
+                            <td>Department</td>
+                            <td>City</td>
+                            <td>
+                                <a href='#'>Edit</a>  |
+                                <a href='#'>Delete</a>
+                            </td>
+                        <tr>
+                            <td>EmployeeId</td>
+                            <td>Name</td>
+                            <td>Gender</td>
+                            <td>Department</td>
+                            <td>City</td>
+                            <td>
+                                <a href='#'>Edit</a>  |
+                                <a href='#'>Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EmployeeId</td>
+                            <td>Name</td>
+                            <td>Gender</td>
+                            <td>Department</td>
+                            <td>City</td>
+                            <td>
+                                <a href='#'>Edit</a>  |
+                                <a href='#'>Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EmployeeId</td>
+                            <td>Name</td>
+                            <td>Gender</td>
+                            <td>Department</td>
+                            <td>City</td>
+                            <td>
+                                <a href='#'>Edit</a>  |
+                                <a href='#'>Delete</a>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+

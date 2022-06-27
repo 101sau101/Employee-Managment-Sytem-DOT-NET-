@@ -1,0 +1,79 @@
+﻿
+
+@{
+    
+    ViewData["Title"] = "About Us";
+}
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-secondary border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <i class="fa-solid fa-users me-lg-4"></i>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" >Employee Management System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="About">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="Dashboard">Dashboard</a>
+                        </li>
+                        
+             <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="FetchData">FetchData</a>
+                        </li>
+                    </ul>
+                   
+                    
+                </div>
+            </div>
+        </nav>
+    <!--Main Navigation-->
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="position-sticky m-0 p-0">
+      <div class="list-group list-group-flush mx-3 mt-4 w-25 p-4" style="float:left;background:url('https://img.freepik.com/free-vector/realistic-stars-galaxy-background_23-2148964715.jpg');height:100%">
+        <a
+         href="#"
+          class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-danger text-white d-inline"
+          aria-current="true"
+        >
+          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-info text-white d-inline">
+          <i class="fa-solid fa-house me-3"></i><span>Home</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-info text-white d-inline "
+          ><i class="fa-solid fa-database me-3"></i><span></span>Fetch data</a>
+
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-info text-white d-inline ">
+          <i class="fa-solid fa-question me-3"></i><span></span>About us</a>
+        
+      </div>
+      </div>
+      </div>
+
+       <div class="bg-image mt-0 pt-0" 
+     style="background-image: url('https://images.ctfassets.net/hrltx12pl8hq/1fR5Y7KaK9puRmCDaIof7j/09e2b2b9eaf42d450aba695056793607/vector1.jpg');
+            height: 100vh">
+<div class="card text-center">
+  <div class="card-header">
+    About Us
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Employee managemnt system</h5>
+    <p class="card-text ">   Employee Management system is an application that enables users to create and store Employee Records.This application is helpful to the department of the organization which maintains data of employees related to an organization.It is simple to understand,user friendly and asks the user to follow step by step operations by giving them few options. It is fast and can perform many operations of an organization.Employee’s Management System is a distributed application, developed to maintain the details of employees working in any organization. It maintains the information about the personal details of their employees.This software package has been developed using the powerful coding tools of C# at Front End and Microsoft Sql Server at Back End.The software is very user friendly. The package contains different modules like Employee details. This version of the software has a multi-user approach. For further enhancement or development of the package, users feedback will be considered.
+</p>
+    
+  </div>
+  
+</div>
+</div>
+  

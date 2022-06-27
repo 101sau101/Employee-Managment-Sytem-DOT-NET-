@@ -1,0 +1,112 @@
+﻿
+
+@{
+    ViewData["Title"] = "All Employees";
+}
+@model IEnumerable<project.Models.Employee>
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-0 pb-0 tex-white">
+    <div class="container-fluid mb-0 pb-0">
+        <i class="fa-solid fa-users me-lg-4 mb-0 pb-0" style="color:white;"></i>
+        <a class="navbar-brand " asp-area="" asp-controller="Home" asp-action="Index">Employee Management System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Employee" asp-action="About">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Employee" asp-action="FetchData">FetchData</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Employee" asp-action="Read">Read</a>
+                </li>
+
+            </ul>
+            <div class="input-group w-25 p-0 m-0">
+                    <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+               <button type="button" class="btn btn-success">Search</button>
+                </div>
+
+        </div>
+    </div>
+</nav>
+    <!--Main Navigation-->
+
+  <!-- Sidebar -->
+  <div class="sidebar mt-0 pt-0">
+    <div class="position-sticky mt-0 pt-0">
+      <div class="list-group list-group-flush mx-3 mt-4 w-25 p-4" style="float:left;background:url('https://img.freepik.com/free-vector/realistic-stars-galaxy-background_23-2148964715.jpg');height:100%">
+        <a
+         href="#"
+          class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-danger text-white d-inline"
+          aria-current="true"
+        >
+          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-info text-white d-inline">
+          <i class="fa-solid fa-house me-3"></i><span>Home</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-info text-white d-inline "
+          ><i class="fa-solid fa-database me-3"></i><span></span>Fetch data</a>
+
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple p-3 mb-2 bg-info text-white d-inline ">
+          <i class="fa-solid fa-question me-3"></i><span></span>About us</a>
+        
+      </div>
+      
+          </div>
+         </div>
+
+       
+ <div class="bg-image mt-0 pt-0" 
+     style="background-image: url('https://media.istockphoto.com/vectors/abstract-blue-light-defocused-gradient-vector-background-vector-id1323545403?k=20&m=132354540https://encrypted-tbn0.gstatic.com/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTErrmERMApsWtgG6FTXcpclkadbaG_KYFYQ&usqp=CAU?q=tbn:ANd9GcSs6_YnZwStKSCGgNTdhr_1v0MSQDnqxtE53au-LIY1aHfn_aPb4CPeSqbclnOEX6rOq0w&usqp=CAU3&s=612x612&w=0&h=v0FnrypLnRYSnshkwoSWfFrJBCUnWITKc8dsgDvL2Q8=');height:100vh;margin:0px;padding:0px;">
+      
+           <h1 style="color:white;">Data of Employees</h1> 
+           <a class="btn btn-success" asp-action="CreateEmployee" asp-controller="Employee">create</a>
+    @if (TempData["msg"] is not null)
+    {
+        <span class="alert alert-success">@TempData["msg"]</span>
+    }
+    @if (TempData["error"] is not null)
+    {
+        <span class="alert alert-danger">@TempData["error"]</span>
+
+    }
+<table class='table table-border w-50 p-3 text-white'>  
+        <thead>  
+            <tr>  
+                <th>ID</th>  
+                <th>Name</th>  
+                <th>Gender</th>  
+                <th>Department</th>  
+                <th>City</th>  
+            </tr>  
+        </thead>  
+        <tbody> 
+            @foreach(var e in Model)
+            {
+                <tr class="text-center">
+
+                    <td>@e.Id</td>
+                    <td>@e.Name</td>
+                    <td>@e.Phone</td>
+                    <td>@e.Department</td>
+
+                    <td>
+                        <a  class="btn btn-primary" asp-action="EditEmployee" asp-controller="Employee" asp-route-id="@e.Id">Edit</a>
+                       <a  class="btn btn-danger" asp-action="delete" asp-controller="Employee" asp-route-id="@e.Id">delete</a>
+                    </td>
+                </tr>
+            }
+           
+           
+    </table>  
+ 
+</div>

@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Signup";
+}
+<body>
+    <div class="bg-image mt-0 pt-0"
+         style="background-image: url('https://images.unsplash.com/photo-1636956026491-86a9da7001c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHZlY3RvcnxlbnwwfHwwfHw%3D&w=1000&q=80');height: 100vh">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                    <div class="card border-0 shadow rounded-3 my-5">
+                        <div class="card-body p-4 p-sm-5">
+                            <h5 class="card-title text-center mb-5 fw-light fs-5">SIGN UP</h5>
+                            <form>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="xyxz">
+                                    <label for="floatingInput">Full name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+
+                                <div class="d-grid">
+
+                                    <button type="submit" class="btn btn-success">Signup</button>
+                                </div>
+                                <p>Already have an account?<a class="nav text-blue" asp-area="" asp-controller="Employee" asp-action="Login">Login</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+
